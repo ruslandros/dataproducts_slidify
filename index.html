@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coursera Developing Data Products Project Assignment</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Coursera Developing Data Products Project Assignment">
+  <meta name="author" content="RD">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Coursera Developing Data Products Project Assignment</h1>
+    <h2>Goods item price query</h2>
+    <p>RD<br/>looking</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is the project assignment for the Coursera Developing Data Product course.</p>
+
+<p>The project is about querying goods item price. User are given three items to choose from, which are:-</p>
+
+<ol>
+<li>Lamb</li>
+<li>Chicken</li>
+<li>Beef</li>
+</ol>
+
+<p>The table listing of the price based on the item choosen will be displayed.
+The average price of the good items based on the city and state will be calculated by the server and will also be displayed.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Shiny App : Goods Item Price Query</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The table listing the price based on the item choosed will be displayed. The table columns are:-</p>
+
+<ol>
+<li>Price - price of the goods items</li>
+<li>City - city of the good items</li>
+<li>State - state of the goods items</li>
+<li>Date - date when the data was published</li>
+</ol>
+
+<p>The shiny app can be accessed from <a href="https://ruslandros.shinyapps.io/project/">https://ruslandros.shinyapps.io/project/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Sample Output for Chicken</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>##     Average Price                   City              State       Date
+##  1:         10.00                 LABUAN        W.P. LABUAN 2016-01-21
+##  2:          9.50                   SIBU            SARAWAK 2016-01-21
+##  3:          8.80                KUANTAN             PAHANG 2016-01-21
+##  4:          8.80  SEBERANG PERAI TENGAH       PULAU PINANG 2016-01-21
+##  5:          8.80                  KINTA              PERAK 2016-01-21
+##  6:          8.75               SEREMBAN    NEGERI SEMBILAN 2016-01-21
+##  7:          8.50                  KLANG           SELANGOR 2016-01-21
+##  8:          8.50               PETALING           SELANGOR 2016-01-21
+##  9:          8.50           KUALA LUMPUR  W.P. KUALA LUMPUR 2016-01-21
+## 10:          8.35          MELAKA TENGAH             MELAKA 2016-01-21
+## 11:          8.25       KUALA TERENGGANU         TERENGGANU 2016-01-21
+## 12:          8.10                 PERLIS             PERLIS 2016-01-21
+## 13:          8.00             KOTA SETAR              KEDAH 2016-01-21
+## 14:          8.00             KOTA BHARU           KELANTAN 2016-01-21
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion and references</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a very simpe app which hopefully fulfilled the project&#39;s requirements.</p>
+
+<p>The read me file is here <a href="https://ruslandros.shinyapps.io/readme-goods-price/">https://ruslandros.shinyapps.io/readme-goods-price/</a>, and source code can be found here <a href="https://github.com/ruslandros/dataproducts">https://github.com/ruslandros/dataproducts</a>.</p>
+
+<p>The data is read from a CSV file which was previously extracted from a live website located at <a href="http://www.fama.gov.my/harga-pasaran-terkini2">http://www.fama.gov.my/harga-pasaran-terkini2</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Shiny App : Goods Item Price Query'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Sample Output for Chicken'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion and references'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
